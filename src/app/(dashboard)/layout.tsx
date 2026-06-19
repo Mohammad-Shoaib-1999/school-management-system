@@ -14,11 +14,17 @@ export default function DashboardLayout({
       <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
         <Link
           href="/"
-          className="flex items-center justify-center lg:justify-start gap-2"
+          className="flex flex-col items-center lg:items-start gap-1"
         >
-          <Image src="/logo.png" alt="logo" width={32} height={32} />
-          <span className="hidden lg:block font-bold">SchooLama</span>
+          <div className="flex items-center gap-2">
+            <Image src="/logo.png" alt="logo" width={32} height={32} />
+            <span className="hidden lg:block font-bold">ANGELS</span>
+          </div>
+          <span className="hidden lg:block text-xs text-gray-500">
+            Education (EM) School Dharmabad
+          </span>
         </Link>
+
         <Menu />
       </div>
       {/* RIGHT */}
